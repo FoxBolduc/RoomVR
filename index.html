@@ -12,13 +12,27 @@
       <a-sky color="#ECECEC"></a-sky>
       -->
 
+      <a-sphere position="-14 0 0" size="1 1 1" color="red"></a-sphere>
+
       <!--                    ****REAL CODE****           -->
+
+      <a-sky color="skyblue"></a-sky>
+      <!-- FLOOR, WALL, CEILING -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="15" color="brown"></a-plane>
       <a-plane position="0 2.5 -7.5" width="20" height="5" color="darkblue"></a-plane>
       <a-plane position="0 2.5 7.5" rotation="180 0 0" width="20" height="5" color="#AAAAAA"></a-plane>
-      <a-plane position="-10 2.5 0" rotation="0 90 0" width="15" height="5"></a-plane>
+      <a-plane position="-10 2.5 0" rotation="0 90 0" width="15" height="5" material="
+        color: #2020A0; transparent: true; opacity: 0.3;"></a-plane>
       <a-plane position="10 2.5 0" rotation="0 -90 0" width ="15" height="5"></a-plane>
       <a-plane position="0 5 0" rotation="90 0 0" width="20" height="15"></a-plane>
+    
+    <!--Window Frame-->
+      <a-box position="-10 2.5 7.5" scale=".25 5 .25" color="grey"></a-box>
+      <a-box position="-10 2.5 -7.5" scale=".25 5 .25" color="grey"></a-box>
+      <a-box position="-10 2.5 2.5" scale=".25 5 .25" color="grey"></a-box>
+      <a-box position="-10 2.5 -2.5" scale=".25 5 .25" color="grey"></a-box>
+      <a-box position="-10 0 0" scale=".25 .25 20" color="grey"></a-box>
+      <a-box position="-10 5 0" scale=".25 .25 20" color="grey"></a-box>
     </a-scene>
   </body>
 </html>
