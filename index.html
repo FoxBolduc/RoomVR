@@ -11,9 +11,11 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       -->
-
+      <!--
       <a-sphere position="-14 0 0" size="1 1 1" color="red"></a-sphere>
-
+      <a-asset-item id="stool-obj" src="./Objects/StoolChair73.obj"></a-asset-item>
+      <a-entity obj-model="obj: #stool-obj" scale=".05 .05 .05"></a-entity>
+      -->
       <!--                    ****REAL CODE****           -->
 
       <a-sky color="skyblue"></a-sky>
@@ -23,7 +25,7 @@
       <a-plane position="0 2.5 7.5" rotation="180 0 0" width="20" height="5" material="src: ./Textures/DarkPlaster.jpg; repeat: 20 5"></a-plane>
       <a-plane position="-10 2.5 0" rotation="0 90 0" width="15" height="5" material="
         color: #2020A0; transparent: true; opacity: 0.3;"></a-plane>
-      <a-plane position="10 2.5 0" rotation="0 -90 0" width ="15" height="5" material="src: ./Textures/BacksplashTiles.jpg; repeat: 15 5"></a-plane>
+      <a-plane position="10 2.5 0" rotation="0 -90 0" width ="15" height="5" material="src: ./Textures/BacksplashTiles.jpg; repeat: 10 3"></a-plane>
       <a-plane position="0 5 0" rotation="90 0 0" width="20" height="15" material="src: ./Textures/WhitePlaster.jpg; repeat: 20 15"></a-plane>
     
     <!--Window Frame-->
@@ -43,6 +45,7 @@
     
     <!--Game Table-->
       <a-box position="-6 1 5" scale="4 .15 2.5" material="src: ./Textures/TableWood.jpg; repeat: 4 2.5"></a-box>
+      <a-cylinder radius="0.09"></a-cylinder>
     </a-scene>
   </body>
 </html>
