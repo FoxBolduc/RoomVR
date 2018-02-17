@@ -19,7 +19,6 @@
       <!--                    ****REAL CODE****           -->
       <a-assets>
         <a-asset-item id="sofa" src="./Objects/Sofa/sofa.gltf"></a-asset-item>
-        <a-asset-item id="chair" src="./Objects/Chair/scene.gltf"></a-asset-item>
         <a-asset-item id="bookcase-obj" src="./Objects/RetroRoomDivider.obj"></a-asset-item>
         <a-asset-item id="bookcase-mtl" src="./Objects/RetroRoomDivider.mtl"></a-asset-item>
       </a-assets>
@@ -61,9 +60,8 @@
       <a-plane position="-3 2.75 -7.36" rotation="3 0 0" height="2.8" width="4.8" color="white"></a-plane>
     
     <!--Sofa-->
-      <a-gltf-model src="#sofa"></a-gltf-model>>
+      <a-gltf-model src="#sofa"></a-gltf-model>
     <!--Chairs-->
-      <a-entity gltf-model="#chair"></a-entity>
     
     <!--Bookcases-->
       <a-entity position="1 0 -7" scale=".015 .022 .025" obj-model="obj: #bookcase-obj; mtl: #bookcase-mtl"></a-entity>
