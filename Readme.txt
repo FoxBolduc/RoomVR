@@ -12,3 +12,9 @@ https://sketchfab.com/models/9fc7c4c52fe5493bb581f8a6852708d2#
 
 Bookshelves:
 https://www.turbosquid.com/3d-models/free-retro-room-divider-3d-model/612970
+
+Armchairs:
+https://sketchfab.com/models/a2bdcdeb79f34c40b68b15c364bb3bf7#
+
+Sofa:
+https://sketchfab.com/models/4ba116c285cd451cb525829703fda3ab#

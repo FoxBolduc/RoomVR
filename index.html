@@ -22,11 +22,11 @@
       -->
       <!--                    ****REAL CODE****           -->
       <a-assets>
-        <a-asset-item id="sofa" src="./Objects/Sofa/sofa.gltf"></a-asset-item>
-        <a-asset-item id="sofa2" src="./Objects/sofa2/common couch01.DAE"></a-asset-item>
+        <a-asset-item id="sofa" src="./Objects/Sofa/scene.gltf"></a-asset-item>
         <a-asset-item id="bookcase-obj" src="./Objects/RetroRoomDivider.obj"></a-asset-item>
         <a-asset-item id="bookcase-mtl" src="./Objects/RetroRoomDivider.mtl"></a-asset-item>
         <a-asset-item id="stool" src="./Objects/Stool/scene.gltf"></a-asset-item>
+        <a-asset-item id="armchair" src="./Objects/Armchair/scene.gltf"></a-asset-item>
       </a-assets>
 
       <a-sky color="skyblue"></a-sky>
@@ -66,9 +66,12 @@
       <a-plane position="-3 2.75 -7.36" rotation="3 0 0" height="2.8" width="4.8" color="white"></a-plane>
     
     <!--Sofa-->
-      <a-gltf-model src="#sofa"></a-gltf-model>>
-    <!--Chairs-->
+      <a-gltf-model position="-4 -.05 0" rotation="0 90 0" scale=".02 .02 .02" src="#sofa"></a-gltf-model>
     
+    <!--Armchairs-->
+      <a-gltf-model position="0 0 -4" rotation="0 -70 0" scale="2 2 2" src="#armchair"></a-gltf-model>
+      <a-gltf-model position="-5.25 0 -4" rotation="0 70 0" scale="2 2 2" src="#armchair"></a-gltf-model>
+
     <!--Bookcases-->
       <a-entity position="1 0 -7" scale=".015 .022 .025" obj-model="obj: #bookcase-obj; mtl: #bookcase-mtl"></a-entity>
       <a-entity position="-7 0 -7" scale=".015 .022 .025" obj-model="obj: #bookcase-obj; mtl: #bookcase-mtl"></a-entity>
@@ -77,8 +80,6 @@
     <a-gltf-model position="2.9 0 1.5" rotation="0 68 0" scale=".0012 .0012 .0012" src="#stool"></a-gltf-model>
     <a-gltf-model position="2.9 0 -.5" rotation="0 68 0" scale=".0012 .0012 .0012" src="#stool"></a-gltf-model>
     <a-gltf-model position="2.9 0 -2.5" rotation="0 68 0" scale=".0012 .0012 .0012" src="#stool"></a-gltf-model>
-    
-    
     </a-scene>
   </body>
 </html>
