@@ -18,3 +18,6 @@ https://sketchfab.com/models/a2bdcdeb79f34c40b68b15c364bb3bf7#
 
 Sofa:
 https://sketchfab.com/models/4ba116c285cd451cb525829703fda3ab#
+
+Chair:
+https://sketchfab.com/models/4e8eba78c7154ebd9752a3d461ba3169
