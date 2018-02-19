@@ -1,6 +1,6 @@
 # RoomVR
-## Fox Bolduc
-## CS 4331
+Fox Bolduc 
+CS 4331
 
 ## Video Demo
 
