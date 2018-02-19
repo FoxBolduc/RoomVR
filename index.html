@@ -6,8 +6,9 @@
     <title>RoomVR</title>
     <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
-    <script src="index.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <a-scene>
@@ -44,7 +45,7 @@
         <a-asset-item id="chair" src="./Objects/Chair/scene.gltf"></a-asset-item>
       </a-assets>
 
-      <a-sky color="skyblue"></a-sky>
+      <a-sky id="sky" color="skyblue"></a-sky>
 
       <!-- Controls and Camera-->
         <a-entity camera universal-controls position="0 1.6 0">
@@ -99,7 +100,7 @@
     
       <!--Television-->
       <a-box position="-3 2.75 -7.4" rotation="3 0 0" scale="5 3 .05" color="black"></a-box>
-      <a-plane event-set__click="src: ./Textures/GoTIntro.mp4" position="-3 2.75 -7.36" rotation="3 0 0" height="2.8" width="4.8" src=""></a-plane>
+      <a-plane event-set__click="src: ./Textures/GoTIntro.mp4" position="-3 2.75 -7.36" rotation="3 0 0" height="2.8" width="4.8"  src="black.jpg"></a-plane>
     
     <!--Sofa-->
       <a-gltf-model position="-4 -.05 0" rotation="0 90 0" scale=".02 .02 .02" src="#sofa"></a-gltf-model>
@@ -129,6 +130,46 @@
       <a-box scale="5 2.5 2" position="6.5 0 -7.5" material="src: ./Textures/DarkWood.jpg; repeat: 6 1"></a-box>
       <a-box scale="5.1 .1 2.15" position="6.5 1.249 -7.5" material="src: ./Textures/DarkGranite.jpg; repeat: 6 1"></a-box>
       <a-box scale="1 2.5 15" position="9.5 4 0"  material="src: ./Textures/DarkWood.jpg; repeat: 1 15"></a-box>
+    
+    <!--Outdoors-->
+      <a-plane width="40" height="40" rotation="-90 0 0" position="0 -.1 0" color="green"></a-plane>
+      <a-plane width="40" height="5" rotation="0 90 0" position="-15 0 0" src="./Textures/Stone"></a-plane>
+    <!-- GUI-->
+      <a-gui-button value="Day" onclick="setLight('day')" position="-9.95 3 -6.5" rotation="0 90 0"></a-gui-button>
+      <a-gui-button value="Evening" onclick="setLight('evening')" position="-9.95 2 -6.5" rotation="0 90 0"></a-gui-button>
+      <a-gui-button value="Night" onclick="setLight('night')" position="-9.95 1 -6.5" rotation="0 90 0"></a-gui-button> 
+    
+    <script>
+      function setLight(time){
+    var sun = document.getElementById('sun');
+    var sky = document.getElementById('sky');
+    if (time == 'day'){
+        sun.setAttribute("position", "-15 10 0")
+        sun.setAttribute("color", "#fff6b5")
+        sun.setAttribute("intensity","1")
+        sky.setAttribute("color", "skyblue")
+    }
+    if (time == "evening"){
+        sun.setAttribute("position", "-15 5 -4");
+        sun.setAttribute("color", '#e2791d');
+        sun.setAttribute("intensity",".75");
+        sky.setAttribute("color", "#fcaa62")
+    }
+    if (time == 'night'){
+      sun.setAttribute("position", "-15 10 0")
+      sun.setAttribute("color", "#bfbfff")
+      sun.setAttribute("intensity",".25")
+      sky.setAttribute("color", "#0a0528")
+    }
+}
+    </script>
+    
+      <!--Lighting-->
+      <!--Sun/Moon-->
+      <a-light id="sun" type="directional" color="#fff6b5" intensity="1" position="-15 10 0"></a-light>
+    
+      <a-light type="point" intensity=".2" position="-3 2 -4"
+      <a-light id="bar" type="point" intensity=".1" position="5 3 0"></a-light>
     </a-scene>
   </body>
 </html>
