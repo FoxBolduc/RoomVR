@@ -133,7 +133,7 @@
     
     <!--Outdoors-->
       <a-plane width="40" height="40" rotation="-90 0 0" position="0 -.1 0" color="green"></a-plane>
-      <a-plane width="40" height="5" rotation="0 90 0" position="-15 0 0" src="./Textures/Stone"></a-plane>
+      <a-box width="40" height="5" rotation="0 90 0" position="-15 0 0" material="src: ./Textures/Stone.jpg; repeat: 20 2"></a-box>
     <!-- GUI-->
       <a-gui-button value="Day" onclick="setLight('day')" position="-9.95 3 -6.5" rotation="0 90 0"></a-gui-button>
       <a-gui-button value="Evening" onclick="setLight('evening')" position="-9.95 2 -6.5" rotation="0 90 0"></a-gui-button>
@@ -168,7 +168,7 @@
       <!--Sun/Moon-->
       <a-light id="sun" type="directional" color="#fff6b5" intensity="1" position="-15 10 0"></a-light>
     
-      <a-light type="point" intensity=".2" position="-3 2 -4"
+      <a-light type="point" intensity=".2" position="-3 2 -4"></a-light>
       <a-light id="bar" type="point" intensity=".1" position="5 3 0"></a-light>
     </a-scene>
   </body>
