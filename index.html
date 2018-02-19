@@ -5,6 +5,7 @@
     <meta charset="utf-8"/>
     <title>RoomVR</title>
     <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -30,6 +31,16 @@
       </a-assets>
 
       <a-sky color="skyblue"></a-sky>
+
+      <!-- Controls and Camera-->
+        <a-entity camera universal-controls position="0 1.6 0">
+          <a-entity cursor="fuse: false"
+                    position="0 0 -.1"
+                    geometry="primitive: ring; radiusInner: .001; radiusOuter: .0015"
+                    material="color: white; shader: flat">
+          </a-entity>
+        </a-entity>
+
       <!-- FLOOR, WALL, CEILING -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="15" src="./Textures/WoodFloor.jpg"></a-plane>
       <a-plane position="0 2.5 -7.5" width="20" height="5" color="darkblue"></a-plane>
@@ -88,7 +99,11 @@
       <a-cylinder height="1.5" rotation="0 240 70" radius=".1" position="-2.5 .35 -2" material="src: ./Textures/BrushedSteel.jpg; metalness: .3"></a-cylinder>
     
     <!--Kitchen Counters-->
-      <a-box scale="2 2.5 15" position="10 0 0"></a-box>
+      <a-box scale="2 2.5 15" position="10 0 0" material="src: ./Textures/DarkWood.jpg; repeat: 1 15"></a-box>
+      <a-box scale="2.15 .1 15" position="10 1.25 0" material="src: ./Textures/DarkGranite.jpg; repeat: 1 15"></a-box>
+      <a-box scale="5 2.5 2" position="6.5 0 -7.5" material="src: ./Textures/DarkWood.jpg; repeat: 6 1"></a-box>
+      <a-box scale="5.1 .1 2.15" position="6.5 1.249 -7.5" material="src: ./Textures/DarkGranite.jpg; repeat: 6 1"></a-box>
+      <a-box scale="1 2.5 15" position="9.5 4 0"  material="src: ./Textures/DarkWood.jpg; repeat: 1 15"></a-box>
     </a-scene>
   </body>
 </html>
