@@ -1,20 +1,28 @@
-#RoomVR
-##Fox Bolduc
-##CS 4331
+# RoomVR
+## Fox Bolduc
+## CS 4331
 
-##Video Demo
+## Video Demo
 
-##Live Demo
+## Live Demo
 foxbolduc.github.io/RoomVR
 
-##Features
-*Virtual living area developed with the A-Frame framework
-*Mobile compatible
-*Adjustable lighting for day, evening, and night
-*Television (as long as watching the Game of Thrones intro is entertaining enough for you)
+## Features
+* Virtual living area developed with the A-Frame framework
+* Mobile compatible
+* Adjustable lighting for day, evening, and night
+
+![day](day.png)
+
+![evening](evening.png)
+
+![night](night.png)
+* Television (as long as watching the Game of Thrones intro is entertaining enough for you)
+
+![Television](television.png)
 
 
-**Sources**
+## Sources
 
 All textures courtesy of:
 https://www.sketchuptextureclub.com/
