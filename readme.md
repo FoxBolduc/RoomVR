@@ -3,6 +3,7 @@ Fox Bolduc
 CS 4331
 
 ## Video Demo
+![Video](VideoDemo.mp4)
 
 ## Live Demo
 foxbolduc.github.io/RoomVR
